@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +6,7 @@ public class Debug_Task : TaskInterface
 {
     public void Execute(DeviceRegistry devices) {
         if (Input.GetKey("w")) {
+           /** Problem 1: AVL Environment (10 points)  */
             devices.speedControl[0] = 1f;
             devices.speedControl[1] = 10f;
             // STUDENTS
@@ -26,9 +27,9 @@ public class Debug_Task : TaskInterface
             devices.steeringControl[0] = 1f;
 
             if (Input.GetKey("a")) {
-                devices.steeringControl[1] = -3;
+                devices.steeringControl[1] = -3;  //left
             } else {
-                devices.steeringControl[1] = 3;
+                devices.steeringControl[1] = 3;   //right
             }
         } else {
             devices.steeringControl[0] = 1f;
