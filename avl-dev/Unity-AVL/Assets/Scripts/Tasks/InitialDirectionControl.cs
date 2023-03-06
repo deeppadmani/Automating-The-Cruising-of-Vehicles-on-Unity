@@ -23,8 +23,6 @@ public class Constants
         public const int BRIDGE = 33;
         public const float STATE_INIT_DIRECTION_CONTROL = 0;
         public const float STATE_VEHICAL_DIRECTION_DONE = 1;
-        // public const float   STATE_NOT_USED_2,
-        //  public const float  STATE_NOT_USED_3,
         public const float STATE_READY_FOR_STRAIGHT_MOVE = 2;
         public const float STATE_CHECK_FOR_GRASS = 3;
         public const float STATE_GRASS_DETACTED = 4;
@@ -48,6 +46,7 @@ public class Constants
         public const float NO_ALARM_DETACTED = 0;
 
         public const float SPEED_10F = 10f;
+        public const float SPEED_2F = 2f;
 }
 
 

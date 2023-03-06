@@ -6,7 +6,7 @@ public class TaskList : MonoBehaviour
 {
     protected TaskInterface[] tasks = new TaskInterface[] 
     {
-        //new Debug_Task()
+        new Debug_Task(),
         new InitialDirectionControl(),
         new ReachDestinationControlTask(),
         new TurnLeft(),

@@ -6,11 +6,9 @@ public class Debug_Task : TaskInterface
 {
     public void Execute(DeviceRegistry devices) {
         if (Input.GetKey("w")) {
-           /** Problem 1: AVL Environment (10 points)  */
+           /** Problem 1: AVL Environment */
             devices.speedControl[0] = 1f;
             devices.speedControl[1] = 10f;
-            // STUDENTS
-            // Put your control code here
         }
 
         if (Input.GetKey("s")) {

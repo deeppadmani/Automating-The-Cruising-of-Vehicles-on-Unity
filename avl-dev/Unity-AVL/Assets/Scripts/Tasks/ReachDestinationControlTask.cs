@@ -9,13 +9,12 @@ public class ReachDestinationControlTask : TaskInterface
         if (Constants.STATE_READY_FOR_STRAIGHT_MOVE == devices.memory[0])
         {  
             devices.speedControl[0] = Constants.STEERING_CONTROL_IDX0;
-            devices.speedControl[1] = Constants.STEERING_CONTROL_SLOW_RIGHT_2F;
+            devices.speedControl[1] = Constants.SPEED_2F;
             devices.memory[0] = Constants.STATE_CHECK_FOR_GRASS;
         }
         if (Constants.STATE_CHECK_FOR_GRASS == devices.memory[0])
         {      
             if(Constants.GRASS == devices.pixels[5,8,1]){
-                Debug.Log($"Stoppppp memory["+ devices.compass[0]+ "]");
                 devices.speedControl[0] = Constants.STEERING_CONTROL_IDX0;
                 devices.speedControl[1] = Constants.STEERING_CONTROL_NORMAL;
                 devices.memory[0] = Constants.STATE_GRASS_DETACTED;
@@ -25,7 +24,7 @@ public class ReachDestinationControlTask : TaskInterface
         if (Constants.STATE_LEFT_MOVE_DONE == devices.memory[0])
         {
             devices.speedControl[0] = Constants.STEERING_CONTROL_IDX0;
-            devices.speedControl[1] = Constants.STEERING_CONTROL_SLOW_RIGHT_2F;
+            devices.speedControl[1] = Constants.SPEED_2F;
             devices.memory[0] = Constants.STATE_READY_TO_MOVE_TOWARDS_BRIDGE;
         }
         if (Constants.STATE_READY_TO_MOVE_TOWARDS_BRIDGE == devices.memory[0])
