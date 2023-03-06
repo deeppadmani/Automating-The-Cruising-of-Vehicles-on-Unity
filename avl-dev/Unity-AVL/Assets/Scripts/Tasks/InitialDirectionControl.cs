@@ -93,7 +93,7 @@ public class InitialDirectionControl : TaskInterface
         }
 
         if(devices.memory[0] > Constants.STATE_VEHICAL_DIRECTION_DONE && 
-            devices.memory[0] < Constants.STATE_VEHICAL_DIRECTION_DONE)
+            devices.memory[0] < Constants.STATE_GRASS_DETACTED)
         {
             devices.steeringControl[0] = Constants.STEERING_CONTROL_IDX0;
             devices.steeringControl[1] = Constants.STEERING_CONTROL_NORMAL;
