@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -372,7 +372,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 69.49696
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -398,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260767515}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.38, y: 13.94, z: -7.58}
+  m_LocalPosition: {x: 0, y: 9.79, z: -44.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -417,7 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dccad8654bfd8a644a3de9f567c7983a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pixelPrefab: {fileID: 0}
+  pixelPrefab: {fileID: 5978877276553321437, guid: d9e8c6bcebaaa5941b00c4848d896665,
+    type: 3}
 --- !u!1 &453550533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330383584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7, y: -0.1, z: 26.6}
+  m_LocalPosition: {x: -8.7, y: -0.1, z: 26.3}
   m_LocalScale: {x: 80.7, y: 0.2, z: 105}
   m_ConstrainProportionsScale: 0
   m_Children: []
